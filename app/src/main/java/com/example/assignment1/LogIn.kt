@@ -33,9 +33,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 
 @Composable
-fun LogIn() {
+fun LogIn(navController: NavController) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -129,7 +130,11 @@ fun LogIn() {
 
 
             TextButton(
-                onClick = {  }
+                onClick = {
+                    navController.navigate("homescreen") {
+                        popUpTo("login") { inclusive = true }
+                    }
+                }
             ) {
                 Text(text = "Go to Home Page", color = colorResource(id = R.color.main),
                     style = TextStyle(

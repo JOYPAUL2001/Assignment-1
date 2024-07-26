@@ -21,12 +21,15 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             val navController = rememberNavController()
+            //val images = ImageGridPreview()
             //NavigationGraph(navController = navController)
             Assignment1Theme {
-                Scaffold(modifier = Modifier.fillMaxSize().statusBarsPadding()) { innerPadding ->
+                Scaffold(modifier = Modifier
+                    .fillMaxSize()
+                    .statusBarsPadding()) { innerPadding ->
                     NavigationGraph(
                         navController = navController,
-                        modifier = Modifier.padding(innerPadding)
+                        modifier = Modifier.padding(innerPadding),
                     )
                 }
             }

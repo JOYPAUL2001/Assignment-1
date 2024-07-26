@@ -1,5 +1,6 @@
 package com.example.assignment1
 
+import android.media.Image
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
@@ -13,7 +14,10 @@ fun NavigationGraph(navController: NavHostController, modifier: Modifier) {
             SplashScreen(navController)
         }
         composable("login") {
-            LogIn()
+            LogIn(navController)
+        }
+        composable("homescreen"){
+            HomeScreen()
         }
     }
 }

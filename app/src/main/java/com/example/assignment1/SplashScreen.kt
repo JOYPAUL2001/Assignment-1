@@ -27,7 +27,7 @@ import kotlinx.coroutines.delay
 
 @Composable
 fun SplashScreen(navController: NavController) {
-    val context = LocalContext.current
+    //val context = LocalContext.current
     val splashTimeout = 3000L
     val systemUiController = rememberSystemUiController()
     val useDarkIcons = MaterialTheme.colorScheme.primary.luminance() > 0.5f
@@ -42,7 +42,7 @@ fun SplashScreen(navController: NavController) {
 
     SideEffect {
         systemUiController.setStatusBarColor(
-            color = Color.White,
+            color = Color(0xFF003559),
             darkIcons = useDarkIcons
         )
     }

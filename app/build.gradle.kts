@@ -50,6 +50,8 @@ android {
 }
 
 dependencies {
+    val nav_version = "2.7.5"
+    val compose_version = "1.6.8"
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -67,13 +69,18 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-
-    implementation ("androidx.navigation:navigation-compose:2.5.3")
-
-
-
-
+    //systembarColor
     implementation ("com.google.accompanist:accompanist-systemuicontroller:0.29.1-alpha")
 
+    implementation("androidx.navigation:navigation-compose:$nav_version")
+    implementation("androidx.core:core-ktx:1.7.0")
+    implementation("androidx.compose.ui:ui:1.6.8")
+    implementation("androidx.compose.material:material:1.6.8")
+    implementation("androidx.compose.ui:ui-tooling-preview:$compose_version")
+    implementation ("androidx.compose.material3:material3:1.0.0")
+    implementation ("com.google.accompanist:accompanist-pager:0.18.0")
+
+    //Grid view
+    implementation ("com.google.accompanist:accompanist-flowlayout:0.25.1")
 
 }
