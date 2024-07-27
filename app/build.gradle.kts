@@ -78,7 +78,10 @@ dependencies {
     implementation("androidx.compose.material:material:1.6.8")
     implementation("androidx.compose.ui:ui-tooling-preview:$compose_version")
     implementation ("androidx.compose.material3:material3:1.0.0")
-    implementation ("com.google.accompanist:accompanist-pager:0.18.0")
+
+    //Pager
+    implementation ("com.google.accompanist:accompanist-pager:0.25.1")
+
 
     //Grid view
     implementation ("com.google.accompanist:accompanist-flowlayout:0.25.1")

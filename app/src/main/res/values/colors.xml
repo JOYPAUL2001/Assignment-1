@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="main">#003559</color>
     <color name="secd">#EFEFEF</color>
+    <color name="third">#0F80B8</color>
+    <color name="quad">#B9D6F2</color>
+
 </resources>
